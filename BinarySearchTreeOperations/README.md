@@ -1,1 +1,6 @@
+4.34: BinarySearchTreeOperations
+	The program starts in the Node class where the variables int data, Node left and right gets initialized and assigned a value in the constructor. The complexity of this class is O(1).
+	The BinarySearchTree class inserts elements and performs an in-order traversal of the BST.  The constructor makes sure the root of the BST is null. The method insert(int data) prints out the data being inserted, and calls the rightLeft() method to determine the location of the node. The complexity of this method depends on the tree since an unbalanced tree will result in O(N) complexity, while a balanced tree will have an O(log n) complexity. The method inOrderTraversal() prints out the BST with the order of Left - Current - Right (in order).The complexity of this method is O(N) where n is the number of nodes. 
+	The main class BinarySearchTreeOperations creates a randomly generated list of numbers and inserts them into the BST. The method getNum(int size) will generate a list of random integers and add random integers to an ArrayList. The time complexity is O(n). The method createBST(List list) will create a BST from the given list of integers and insert the elements to the BST. This method complexity worst case O(N^2) for an unbalanced tree while on average is O(n log n). 
+Overall the worst case complexity for the whole program is O(n^2).
 
